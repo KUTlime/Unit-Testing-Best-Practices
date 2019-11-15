@@ -244,6 +244,13 @@ or use an attribute to decorate the class.
 [assembly: InternalsVisibleTo("TestsAssembly")]
 ```
 
+## How to organize the structure of UT project?
+The way is to organize it **exactly** same as the original project or projects. Every business project should have its own dedicated UT project labelled with "**.UnitTests**". It helps with navigation and orientation within complicated projects.
+
+*Example:*<br>
+Business project:&nbsp;&nbsp;&nbsp;**AgentManager.Worker**<br>
+UT project:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AgentManager.Worker.UnitTests**
+
 # Links
 [Structuring Unit Tests](https://haacked.com/archive/2012/01/02/structuring-unit-tests.aspx/) (the best article about structure of unit tests which I've read)<br>
 [Unit Test Boilerplate Generator GitHub](https://github.com/microsoft/UnitTestBoilerplateGenerator)<br>
