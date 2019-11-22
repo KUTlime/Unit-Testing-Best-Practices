@@ -109,6 +109,7 @@ $UsingStatements$
 
 namespace $Namespace$
 {
+	// TODO: Do a proper testing of $ClassName$
 	public class $ClassName$Tests
 	{
 		$TestMethods$
@@ -139,22 +140,19 @@ public class $TestMethodName$Tests
 This is a setup for the Test method name format - Empty.
 ```csharp
 [TestClass]
-public void $TestMethodName$Tests()
+public class $TestMethodName$Tests
 {
 	[TestMethod]
-	public void $TestMethodName$Test()
+	public $AsyncModifier$ $AsyncReturnType$ $TestMethodName$Test()
 	{
 		// Arrange
-
 	
 		// Act
-	
 	
 		// Assert
 		Assert.Fail();
 	}
 }
-
 ```
 
 ## Snippets to Visual Studio (MSTest)
